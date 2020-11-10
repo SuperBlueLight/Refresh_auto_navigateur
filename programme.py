@@ -59,7 +59,7 @@ class Programme():
                 time.sleep(1.0)
                 print("Click...")
                 position_souris_x, position_souris_y = pyautogui.position()
-                pyautogui.click(x = self.POSITION_BOUTON_REFRESH[0], y = self.POSITION_BOUTON_REFRESH[1])
+                pyautogui.click(x=position_souris_x, y=position_souris_y)
                 print(f"Fait. Position de la souris lors du click: ({position_souris_x}, {position_souris_y})")
 
                 print("\nConserver cette position? (oui/non)")
