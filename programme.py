@@ -24,7 +24,7 @@ class Programme():
     # Constantes
 
     POSITION_BOUTON_REFRESH = (-1393, 79)
-    TEMPS_AVANT_REFRESH = 30 # Temps d'attente entre deux clicks, en secondes
+    TEMPS_AVANT_REFRESH = 120 # Temps d'attente entre deux clicks, en secondes
 
     # .................................................................
     # Constructeur & méthodes spéciales
