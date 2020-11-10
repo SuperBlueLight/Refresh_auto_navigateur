@@ -24,7 +24,7 @@ class Programme():
     # Constantes
 
     POSITION_BOUTON_REFRESH = (-1393, 79)
-    TEMPS_AVANT_REFRESH = 120 # Temps d'attente entre deux clicks, en secondes
+    TEMPS_AVANT_REFRESH = 30 # Temps d'attente entre deux clicks, en secondes
 
     # .................................................................
     # Constructeur & méthodes spéciales
@@ -84,10 +84,7 @@ class Programme():
             pyautogui.moveTo(x = position_souris_x, y = position_souris_y)
             print("Fait.")
 
-            temps_avant_refresh = self.TEMPS_AVANT_REFRESH 
-            temps_avant_refresh += random.randint(-10, 10)
-
-            time.sleep(temps_avant_refresh)
+            time.sleep(self.TEMPS_AVANT_REFRESH)
         
 
 if __name__ == "__main__":
